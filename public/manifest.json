@@ -1,10 +1,15 @@
 {
-    "manifest_version": 3,
-    "name": "React Chrome Extension",
-    "version": "1.0.0",
-    "description": "A simple React app as a Chrome extension",
-    "action": {
-      "default_popup": "index.html"
-    },
-    "permissions": []
-  }
+  "manifest_version": 3,
+  "name": "Opeach side panel application",
+  "version": "1.0.0",
+  "description": "User can login with google account, and begin onbroading by selecting their favorite food",
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "icons": {
+    "16": "icon16.svg",
+    "48": "icon48.svg",
+    "128": "icon128.svg"
+  },
+  "permissions": ["sidePanel", "storage", "identity"]
+}
